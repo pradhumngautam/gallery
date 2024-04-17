@@ -12,8 +12,11 @@ const handler = NextAuth({
       async authorize(credentials: any) {
         return {
           id: "user1",
+          name: "pradhumn gautam",
         };
       },
     }),
   ],
 });
+export const GET = handler;
+export const POST = handler;
